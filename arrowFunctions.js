@@ -6,3 +6,7 @@ const ageOfStudents = [21,20,22,22,21,20];
 const studentsDetails = nameOfStudents.map((studentName,index) => ({Name : studentName, Age : ageOfStudents[index], heightInCM: heightsOfStudents[index]}));
 
 console.log(studentsDetails)
+
+const requiredHeights = heightsOfStudents.filter(height => height>170)
+
+console.log(requiredHeights)
